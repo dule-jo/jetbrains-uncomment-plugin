@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.dulejo.uncommentplugin</id>
+    <name>Uncomment plugin</name>
+    <version>1.0</version>
+    <vendor email="dulejo@gmail.com">dulejo</vendor>
+
+    <description>
+        Simple plugin to uncomment lines of code
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="UncommentAction"
+                class="com.dulejo.uncommentplugin.actions.UncommentAction"
+                text="Uncomment plugin text"
+                description="Uncomment plugin desc">
+
+            <keyboard-shortcut
+                    keymap="$default"
+                    first-keystroke="ctrl K"
+                    second-keystroke="U"/>
+        </action>
+    </actions>
+</idea-plugin>
