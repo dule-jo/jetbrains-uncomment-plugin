@@ -1,6 +1,5 @@
 package commentStyles.implementations
 
-import com.dulejo.uncommentplugin.commentStyles.ICommentStyle
 import commentStyles.CommentStyle
 
 class DoubleDashCommentStyle : CommentStyle() {

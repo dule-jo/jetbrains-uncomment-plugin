@@ -1,7 +1,6 @@
 package commentStyles.implementations
 
-import com.dulejo.uncommentplugin.commentStyles.ICommentStyle
-import commentStyles.CommentStyle
+import com.dulejo.uncommentlines.commentStyles.ICommentStyle
 
 class HtmlCommentStyle : ICommentStyle {
     override fun uncommentLine(line: String): String {

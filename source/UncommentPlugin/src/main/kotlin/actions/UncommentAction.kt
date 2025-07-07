@@ -1,4 +1,4 @@
-package com.dulejo.uncommentplugin.actions
+package com.dulejo.uncommentlines.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent

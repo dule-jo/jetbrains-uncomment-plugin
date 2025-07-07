@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.dulejo.uncommentplugin</id>
-    <name>Uncomment plugin</name>
+    <id>com.dulejo.uncommentlines</id>
+    <name>Uncomment lines</name>
     <version>1.0</version>
     <vendor email="dulejo@gmail.com">dulejo</vendor>
 
@@ -12,9 +12,9 @@
 
     <actions>
         <action id="UncommentAction"
-                class="com.dulejo.uncommentplugin.actions.UncommentAction"
-                text="Uncomment plugin text"
-                description="Uncomment plugin desc">
+                class="com.dulejo.uncommentlines.actions.UncommentAction"
+                text="Uncomment text plugin"
+                description="Uncomment selected lines in various languages and editors">
 
             <keyboard-shortcut
                     keymap="$default"
@@ -22,4 +22,6 @@
                     second-keystroke="U"/>
         </action>
     </actions>
+
+    <idea-version since-build="241.14494" />
 </idea-plugin>

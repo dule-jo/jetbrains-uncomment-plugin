@@ -1,6 +1,6 @@
 package commentStyles
 
-import com.dulejo.uncommentplugin.commentStyles.ICommentStyle
+import com.dulejo.uncommentlines.commentStyles.ICommentStyle
 
 abstract class CommentStyle : ICommentStyle {
     abstract val comment: String
@@ -9,7 +9,7 @@ abstract class CommentStyle : ICommentStyle {
         val leadingWhitespace = line.takeWhile { it == ' ' || it == '\t' }
         val trimmed = line.trimStart()
         return if (trimmed.startsWith(comment)) {
-            leadingWhitespace + trimmed.removePrefix(comment).trimStart()
+            leadingWhitespace + trimmed.removePrefix(comment)
         } else {
             line
         }
