@@ -1,11 +1,37 @@
 <idea-plugin>
     <id>com.dulejo.uncommentlines</id>
     <name>Uncomment lines</name>
-    <version>1.0</version>
+    <version>1.2</version>
     <vendor email="dulejo@gmail.com">dulejo</vendor>
 
     <description>
-        Simple plugin to uncomment lines of code
+        <![CDATA[
+    <h2>Uncomment Lines Plugin</h2>
+    <p>This plugin allows you to easily uncomment selected lines of code in multiple programming languages.</p>
+    <p><b>Key feature:</b> When you select multiple lines, only those lines that start with a comment prefix are uncommented. Lines without comments remain unchanged.</p>
+    <p>For example, given the selection:</p>
+    <pre>
+    // System.out.println("Debug message");
+// int counter = 0;
+    int value = 42;
+    // return value;
+    </pre>
+    <p>The plugin will uncomment to:</p>
+    <pre>
+    System.out.println("Debug message");
+    int counter = 0;
+    int value = 42;
+    return value;
+    </pre>
+    <p>Other features include:</p>
+    <ul>
+      <li>Supports popular languages such as Java, Kotlin, C#, SQL, PHP, Python, and more.</li>
+      <li>Automatically detects the comment style based on the file type.</li>
+      <li>Uncomments lines with a single keyboard shortcut <b>Ctrl+K, U</b>.</li>
+      <li>Simple and intuitive user experience integrated directly into JetBrains IDEs.</li>
+    </ul>
+    <p>Improve your coding workflow by quickly removing comments without manual editing.</p>
+  ]]>
     </description>
 
     <depends>com.intellij.modules.platform</depends>
